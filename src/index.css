@@ -1,0 +1,31 @@
+*{
+  margin : 0px;
+  padding : 0px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weatherBox {
+  background-color: aquamarine;
+  width: 75vw;
+  height: 70vh;
+}
+@media screen and (max-width: 400px) {
+  .weatherBox {
+    width: 95vw;
+  }
+}
