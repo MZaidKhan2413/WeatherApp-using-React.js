@@ -5,7 +5,8 @@
 }
 
 body {
-  background-color: #f3f4f6;
+  /* background-color: #f3f4f6; */
+  background-image: linear-gradient(to right top, #f3f4f6, #d7e3f8, #b9d2fa, #99c1fc, #72b1fd, #79b1fe, #7fb1fe, #85b1ff, #afc2ff, #cfd5fe, #eae9fe, #ffffff);
   height: 100dvh;
   display: flex;
   justify-content: center;
