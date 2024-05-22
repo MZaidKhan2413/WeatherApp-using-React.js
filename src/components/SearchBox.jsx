@@ -17,12 +17,16 @@ export default function SearchBox(){
             console.log(data);
             setWeatherInfo({
                 ...weatherInfo,
+                city: city,
                 temp: data.temp_c,
                 humidity: data.humidity,
                 feelsLike: data.feelslike_c,
-                cloud: data.cloud,
                 dayEnv: data.condition.text,
                 icon: data.condition.icon,
+                windSpeed: data.wind_kph,
+                visibility: data.vis_km,
+                pressure: data.pressure_mb,
+                windDirection: data.wind_dir,
             })
 
         } catch (error) {
@@ -34,13 +38,11 @@ export default function SearchBox(){
         evt.preventDefault();
         await searchWeather();
         setCity("")
-
     }
 
     const handleChange = (evt)=>{
         setCity(evt.target.value)
     }
-
 
     return (
         <form className="searchBox d-flex flex-column align-items-center p-2" onSubmit={handleSubmit}>
